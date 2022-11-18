@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+#dContent {
+    margin-top: 70px;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+    transform: scale(1.05);
+}
+
+.card-title:hover {
+    color: blue;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.card-title:hover>img {
+    border: solid 3px blue !important;
+}
