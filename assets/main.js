@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     fetchedSha = await getSha();
 
     if (fetchedSha !== "") {
-        const liveStreams = getLiveStreams(fetchedSha);
+        const liveStreams = await getLiveStreams(fetchedSha);
 
         if (liveStreams !== null && liveStreams.length > 0) {
             createCards(liveStreams);
